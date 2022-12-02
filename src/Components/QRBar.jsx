@@ -17,7 +17,7 @@ export default function QRBar() {
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        position: "absolute",
+        position: "fixed",
         bottom: "0",
         width: "100vw",
         margin: "auto",
