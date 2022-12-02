@@ -1,7 +1,9 @@
 import { createTheme } from "@mui/material/styles";
+import "@fontsource/jost";
+
 export const theme = createTheme({
     palette: {
-        mode: "dark",
+        mode: "light",
         primary: {
             main: "#55A5D9",
         },
@@ -9,12 +11,8 @@ export const theme = createTheme({
             main: "#45CCD2",
             contrastText: "#000",
         },
-        background: {
-            default: "#fff",
-            paper: "#122136",
-        },
     },
     typography: {
-        fontFamily: '"Core Sans C", sans-serif',
+        fontFamily: '"Jost", sans-serif',
     },
 });
