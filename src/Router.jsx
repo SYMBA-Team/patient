@@ -5,6 +5,7 @@ import Home from "Pages/Home";
 import LogIn from "Pages/LogIn";
 import SignUp from "Pages/SignUp";
 import Profil from "Pages/profile";
+import Landing from "Pages/Landing/Landing"
 import { Navigate, useRoutes } from "react-router-dom";
 
 const Router = () => {
@@ -12,6 +13,10 @@ const Router = () => {
     return useRoutes([
         {
             path: "/",
+            element: <Landing />,
+        },
+        {
+            path: "/login",
             element: user ? <Navigate to="/home" /> : <LogIn />,
         },
         {
