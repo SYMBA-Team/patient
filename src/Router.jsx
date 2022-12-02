@@ -19,10 +19,6 @@ const Router = () => {
             element: <TestPage />,
         },
         {
-            path: "/",
-            element: <Landing />,
-        },
-        {
             path: "/login",
             element: user ? <Navigate to="/home" /> : <LogIn />,
         },

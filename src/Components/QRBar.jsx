@@ -11,7 +11,7 @@ export default function QRBar() {
   }
   return (
     <Box
-      sx={{
+      sx={{bgcolor:"white",
         height: value ? "80vh" : "12vh",
         boxShadow: "0px -8px 10px 1px rgba(0, 0, 0, 0.1)",
         display: "flex",
