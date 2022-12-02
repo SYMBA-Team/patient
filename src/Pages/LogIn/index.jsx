@@ -1,9 +1,9 @@
 import { Container, Card, Box, CardContent } from "@mui/material";
 // import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import GitBetter from "../../GitBetter.svg";
-import TopCurve from "../../top_curve.svg";
-import BottomCurve from "../../bottom_curve.svg";
-import Med from "../../med.svg";
+import GitBetter from "images/GitBetter.svg";
+import TopCurve from "images/top_curve.svg";
+import BottomCurve from "images/bottom_curve.svg";
+import Med from "images/med.svg";
 import { useSignInMutation } from "app/backend/export/auth";
 import Auth from "Components/Auth";
 import * as Yup from "yup";
