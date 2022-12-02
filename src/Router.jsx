@@ -8,6 +8,7 @@ import Profil from "Pages/profile";
 import Landing from "Pages/Landing/Landing"
 import { Navigate, useRoutes } from "react-router-dom";
 import Diagnosis from "Pages/diagnosis";
+import DiagnosisInfo from "Pages/DiagnosisInfo";
 
 const Router = () => {
     const { user } = useUser();
@@ -39,6 +40,10 @@ const Router = () => {
         {
             path: "/Diagnosis",
             element: <Diagnosis />,
+        },
+        {
+            path: "/DiagnosisInfo",
+            element: <DiagnosisInfo />,
         },
         {
             path: "*",
