@@ -9,6 +9,7 @@ import { Navigate, useRoutes } from "react-router-dom";
 import TestPage from "Pages/TestPage";
 import Diagnosis from "Pages/diagnosis";
 import Analysis from "Pages/analysis";
+import DiagnosisInfo from "Pages/DiagnosisInfo";
 
 const Router = () => {
     const { user } = useUser();
@@ -40,6 +41,10 @@ const Router = () => {
         {
             path: "/Diagnosis",
             element: <Diagnosis />,
+        },
+        {
+            path: "/DiagnosisInfo",
+            element: <DiagnosisInfo />,
         },
         {
             path: "/analysis",
