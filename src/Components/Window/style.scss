@@ -1,0 +1,28 @@
+.Window {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    border: 2px solid var(--secondary-shade);
+    background-color: var(--primary-shade);
+    box-shadow: 3px 6px 12px 2px #0000005c;
+    & > .Menu {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--primary-shade);
+
+        & > div {
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.5rem;
+            background-color: var(--red);
+            &:nth-child(2) {
+                background-color: var(--yellow);
+            }
+            &:nth-child(3) {
+                background-color: var(--green);
+            }
+        }
+    }
+}
