@@ -18,20 +18,21 @@ import ProfilCard from "Components/ProfilCard";
 
 export default function Profil(){
     return (
-        <Container 
-        component="main"
-        maxWidth="md"
-        sx={{
-          
-        }}
-        >
-            <Box sx={{display: "flex", justifyContent:"space-between", pt: "1rem" }}>
+        
+            <Container
+             sx={{
+                px:3,
+               
+             }}
+            >
+                <Box sx={{display: "flex", justifyContent:"space-between", pt: "1rem" }}>
               <Box  component="img" alt="Logo" src={humburger} sx={{width:"25.24px"}} ></Box>
               <Box component="img" alt="Logo" src={GitBetter} sx={{width:"101.41px"}}></Box>
-            </Box>
-            <ProfilCard 
-            cx={{}}
-            />
-        </Container>
+              </Box>
+               <ProfilCard  />
+            
+            </Container>
+            
+        
     )
 }
