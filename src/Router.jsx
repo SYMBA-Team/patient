@@ -7,6 +7,7 @@ import SignUp from "Pages/SignUp";
 import Profil from "Pages/profile";
 import Landing from "Pages/Landing/Landing"
 import { Navigate, useRoutes } from "react-router-dom";
+import Diagnosis from "Pages/diagnosis";
 
 const Router = () => {
     const { user } = useUser();
@@ -34,6 +35,10 @@ const Router = () => {
         {
             path: "/confirmation",
             element: user ? <Navigate to="/admin" /> : <Confirmation />,
+        },
+        {
+            path: "/Diagnosis",
+            element: <Diagnosis />,
         },
         {
             path: "*",
