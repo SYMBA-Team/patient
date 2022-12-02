@@ -15,6 +15,7 @@ import {
 import GitBetter from "images/GitBetter.svg"
 import Appbar from "Components/Appbar";
 import ProfilCard from "Components/ProfilCard";
+import CardList from "Components/CardList";
 
 
 export default function Profil() {
@@ -24,20 +25,11 @@ export default function Profil() {
         px: 3,
       }}
     >
-      <Box
-        sx={{ display: "flex", justifyContent: "space-between", pt: "1rem" }}
-      >
-        <Appbar/>
-        
-        <Box
-          component="img"
-          alt="Logo"
-          src={GitBetter}
-          sx={{ width: "101.41px" }}
-        ></Box>
-      </Box>
-      <ProfilCard />
       
+        <Appbar/>
+   
+      <ProfilCard />
+      <CardList List={[{date:"21 November 2022",hospital:"Hopital EL AZHAR, section B2",doctor:"Doctor Mohamed MOUSSAOUI, Cardio-logue"}]}/>
 
     </Container>
   );

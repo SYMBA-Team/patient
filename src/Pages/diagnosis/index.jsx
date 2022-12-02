@@ -2,6 +2,7 @@ import { Box, Typography, Card } from "@mui/material";
 import Burger from "images/burger.svg";
 import Logo from "images/Logo-Small.png";
 import DiagnosisCard from "Components/DiagnosisCard";
+import Visits from "Components/visits";
 
 export default function Diagnosis() {
   return (
@@ -20,17 +21,16 @@ export default function Diagnosis() {
       <Typography
       sx={{
         color:"#55A5D9",
-        fontSize:"20",
+        fontSize:"25",
         mt:4,
         pl:2,
-        fontWeight: "500",
+        fontWeight: "bold",
         mb:2
       }} 
       >Diognosis Info </Typography>
       <Card sx={{
         m:2,
         borderRadius: "12px",
-        border: "none",
         bgcolor:"#E8F6FF"
       }}>
         <Box
@@ -57,6 +57,7 @@ export default function Diagnosis() {
           </Box>
         </Box>
       </Card>
+      <Visits/>
     </>
   );
 }
