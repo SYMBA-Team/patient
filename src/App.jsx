@@ -21,7 +21,7 @@ export default function App() {
             <BrowserRouter>
                 <Router />
             </BrowserRouter>
-            <Copyright sx={{ mt: "auto", mb: 4 }} />
+            {/* <Copyright sx={{ mt: "auto", mb: 4 }} /> */}
         </>
     );
 }
