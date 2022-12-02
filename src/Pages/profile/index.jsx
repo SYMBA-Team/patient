@@ -16,7 +16,7 @@ import {
 import * as React from "react";
 import GitBetter from "images/GitBetter.svg";
 import humburger from "images/humburger.svg";
-import QR from "images/QR.svg";
+
 import { bgcolor } from "@mui/system";
 import ProfilCard from "Components/ProfilCard";
 import profilPic from "images/profil-pic.svg";

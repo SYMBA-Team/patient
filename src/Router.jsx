@@ -7,10 +7,14 @@ import SignUp from "Pages/SignUp";
 import Profil from "Pages/profile";
 import Landing from "Pages/Landing/Landing"
 import { Navigate, useRoutes } from "react-router-dom";
-
+import TestPage from "Pages/TestPage";
 const Router = () => {
     const { user } = useUser();
     return useRoutes([
+        {
+            path: "/test",
+            element: <TestPage />,
+        },
         {
             path: "/",
             element: <Landing />,
