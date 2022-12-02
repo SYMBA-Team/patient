@@ -1,5 +1,5 @@
 import { useUser } from "hooks";
-import Error404 from "Pages/Errors/Error404";
+import Error500 from "Pages/Errors/Error500";
 import Home from "Pages/Home";
 import LogIn from "Pages/LogIn";
 import SignUp from "Pages/SignUp";
@@ -10,23 +10,19 @@ const Router = () => {
     return useRoutes([
         {
             path: "/",
+            element: user ? <Navigate to="/home" /> : <LogIn />,
+        },
+        {
+            path: "/home",
             element: <Home />,
         },
         {
-            path: "/login",
-            element: user ? <Navigate to="/admin" /> : <LogIn />,
-        },
-        {
             path: "/signup",
-            element: user ? <Navigate to="/admin" /> : <SignUp />,
-        },
-        {
-            path: "/admin",
-            element: user ? <Error404 /> : <Navigate to="/login" />,
+            element: user ? <Navigate to="/home" /> : <SignUp />,
         },
         {
             path: "*",
-            element: <Error404 />,
+            element: <Error500 />,
         },
     ]);
 };

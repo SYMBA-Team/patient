@@ -5,11 +5,11 @@ export default function Error404() {
     return (
         <>
             <Box sx={{ mt: 30 }}>
-                <Typography component="h2" variant="h5" align="center">
-                    This Page doesn't exist
+                <Typography component="body1" variant="h5" align="center">
+                    we are sorry, we will try to fix this issue soon.
                 </Typography>
                 <Typography component="h1" variant="h1" align="center" sx={{ fontSize: "10rem" }}>
-                    404
+                    Something went wrong
                 </Typography>
             </Box>
             <Button component={Link} to="/" variant="contained" size="large" sx={{ mx: "auto" }}>
