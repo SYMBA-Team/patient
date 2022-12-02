@@ -43,7 +43,7 @@ export default function CardList({ List }) {
             padding: "1em",
             borderRadius: "15px",
             marginTop: "1em",
-            display: "flex"
+            display: "flex",
           }}
         >
           <Box>
@@ -67,25 +67,26 @@ export default function CardList({ List }) {
               {element.doctor}
             </Typography>
           </Box>
-          <Box sx={{}}>
+          <Box >
           <Button
               sx={{
                 borderRadius: "10px",
                 marginRight: "0.01em",
                 backgroundColor: "rgba(176, 34, 243, 0.22)",
                 color:"#B022F3",
-                padding: "3em",
-                paddingTop: "0.3em",
-                paddingBottom: "0.3em",
-                fontSize: "14px",
-                border: "0.651852px solid #B022F3"
+                fontSize: "10px",
+                border: "0.651852px solid #B022F3",
+                width: "88px",
+                height: "20px",
+                size:"sm",
+                ml:8
               }}
               onClick={() => {
                 console.log("Reading more");
               }}
             >
               {" "}
-              <Typography sx={{ color: "#B022F3", fontSize:"14px" }}>Physical Analysis</Typography>{" "}
+              <Typography sx={{ color: "#B022F3", }}>Physical Analysis</Typography>{" "}
             </Button>
             <Button
               sx={{
@@ -96,12 +97,12 @@ export default function CardList({ List }) {
                 paddingTop: "0.3em",
                 paddingBottom: "0.3em",
                 fontSize: "0.3em",
+                ml:8
               }}
               onClick={() => {
                 console.log("Reading more");
               }}
             >
-              {" "}
               <Typography sx={{ color: "white" }}>Read More</Typography>{" "}
             </Button>
           </Box>
