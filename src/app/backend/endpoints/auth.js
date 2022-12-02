@@ -16,6 +16,14 @@ export default function auth(builder) {
                 body,
             }),
         }),
+        /* phone 2othAuth */
+        phoneAuth: builder.mutation({
+            query: (password) => ({
+                url: "/signup",
+                method: "POST",
+                body: { password },
+            }),
+        }),
         /* Log out */
         logOut: builder.mutation({
             query: () => ({
