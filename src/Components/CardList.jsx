@@ -36,75 +36,61 @@ export default function CardList({ List }) {
         <DateProfil num="15" month="nov." />
       </Box>
       {List.map((element, i) => (
-        <Box
-          key={i}
-          sx={{
-            background: "white",
-            padding: "1em",
-            borderRadius: "15px",
-            marginTop: "1em",
-            display: "flex",
-          }}
-        >
-          <Box>
-            {" "}
-            <Typography
-              sx={{ fontWeight: "600", fontSize: "16px" }}
-              align="left"
-            >
-              {element.date}
-            </Typography>
-            <Typography sx={{ fontSize: "8px", margin: "auto" }}>
-              {element.hospital}
-            </Typography>
-            <Typography
-              sx={{
-                color: "primary.main",
-                marginBottom: "1em",
-                fontSize: "0.5em",
-              }}
-            >
-              {element.doctor}
-            </Typography>
-          </Box>
-          <Box >
-          <Button
-              sx={{
-                borderRadius: "10px",
-                marginRight: "0.01em",
-                backgroundColor: "rgba(176, 34, 243, 0.22)",
-                color:"#B022F3",
+        <Box key={i}>
+          <Box
+            sx={{
+              bgcolor: "white",
+              borderRadius: "12px",
+              mb: 2,
+              mt: 3,
+              p:1
+            }}
+          >
+
+            <Box sx={{display:"flex", justifyContent:"space-between"}}>
+              <Typography sx={{
+                color: "#55A5D9",
+                fontSize: "16px",
+                fontWeight:"bold"
+                }}
+                >{element.date}</Typography>
+              <Box
+                onClick={() => {
+                  console.log("Reading more");
+                }}
+                sx={{
+                  background: "rgba(176, 34, 243, 0.22)",
+                  border: "0.651852px solid #B022F3",
+                  borderRadius: "12px",
+                  p:.3,
+                  px:1
+                }}
+              >
+                <Typography sx={{fontSize:"13px", color: "#B022F3"}}>Physical Analysis</Typography>
+              </Box>
+            </Box>
+
+            <Typography sx={{
                 fontSize: "10px",
-                border: "0.651852px solid #B022F3",
-                width: "88px",
-                height: "20px",
-                size:"sm",
-                ml:8
-              }}
-              onClick={() => {
-                console.log("Reading more");
-              }}
-            >
-              {" "}
-              <Typography sx={{ color: "#B022F3", }}>Physical Analysis</Typography>{" "}
-            </Button>
-            <Button
-              sx={{
-                borderRadius: "10px",
-                marginRight: "0.01em",
-                backgroundColor: "secondary.main",
-                padding: "3em",
-                paddingTop: "0.3em",
-                paddingBottom: "0.3em",
-                fontSize: "0.3em",
-                ml:8
-              }}
-              onClick={() => {
-                console.log("Reading more");
-              }}
-            >
-              <Typography sx={{ color: "white" }}>Read More</Typography>{" "}
-            </Button>
+                mb:1
+            }}
+            >{element.hospital}</Typography>
+            <Box sx={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+              <Typography sx={{fontSize: "10px"}}>{element.doctor}</Typography>
+              <Box
+                onClick={() => {
+                  console.log("Reading more");
+                }}
+                sx={{
+                  bgcolor:"#3DB6BB",
+                  borderRadius:"12px",
+                  px:1
+                }}
+              >
+                <Typography sx={{color:"white", fontCize:"10px"}}>Read More</Typography>
+              </Box>
+            </Box>
+
           </Box>
         </Box>
       ))}

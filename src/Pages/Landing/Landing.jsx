@@ -18,7 +18,7 @@ import { bgcolor } from "@mui/system";
 import Appbar from "Components/Appbar";
 import CardList from "Components/CardList";
 import ProfilCard from "Components/ProfilCard";
-
+import QRBar from "Components/QRBar";
 export default function Landing() {
   return (
     <Container
@@ -53,6 +53,8 @@ export default function Landing() {
           },
         ]}
       ></CardList>
+
+      <QRBar/>
     </Container>
   );
 }
