@@ -12,6 +12,7 @@ import {
 import GitBetter from "../../GitBetter.svg";
 import TopCurve from "../../top_curve.svg";
 import BottomCurve from "../../bottom_curve.svg";
+import Med from "../../med.svg";
 import { useSignInMutation } from "app/backend/export/auth";
 import Auth from "Components/Auth";
 import * as Yup from "yup";
@@ -27,8 +28,9 @@ export default function LogIn() {
         display: "flex",
         flexDirection: "column",
         maxHeight: "100vh",
+        maxWidth:"100vw",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
       }}
     >
       <Box component="img" alt="Logo" sx={{}} src={TopCurve} />
@@ -41,9 +43,10 @@ export default function LogIn() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          maxWidth: "40%", maxHeight: "30%" 
         }}
       >
-        <Card sx={{ maxWidth: "86%", maxHeight: "40%" }}>
+        <Card >
           <CardContent
             sx={{
               p: 8,
@@ -51,6 +54,8 @@ export default function LogIn() {
               flexDirection: "column",
               alignItems: "center",
               bgcolor: "background.default",
+              maxWidth:"100%",
+              maxHeight:"30%"
             }}
           >
             {/* <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -94,6 +99,7 @@ export default function LogIn() {
                   outline: "theme.secondary",
                 },
               ]}
+              sx={{maxWidth:"100%",maxWidth:"100%",}}
             >
               {/* <Grid container>
                                 <Grid item xs>
@@ -111,7 +117,9 @@ export default function LogIn() {
           </CardContent>
         </Card>
       </Box>
-      <Box component="img" alt="Logo" sx={{}} src={BottomCurve} />
+      <Box component="img" alt="Logo"  src={Med} />
+
+      <Box component="img" alt="Logo" sx={{position:"fixed",bottom:"0"}} src={BottomCurve} />
     </Container>
   );
 }

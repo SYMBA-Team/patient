@@ -46,7 +46,7 @@ function Auth({
         component={Form}
         onSubmit={handleSubmit}
         noValidate
-        sx={{ mt: 1, minWidth: "80%" }}
+        sx={{ mt: 1, minWidth: "90%" }}
       >
         {inputs.map(({ name, outline, ...props }, i) => (
           <TextField
@@ -57,7 +57,8 @@ function Auth({
               touched[name] && errors[name] ? String(errors[name]) : undefined
             }
             {...props}
-            sx={{ outline, minWidth: "100%" }}
+            fullWidth
+            sx={{ outline:"theme.primary", minWidth: "100%",bgcolor: "background.default" }}
           />
         ))}
         {rememberMe && (
