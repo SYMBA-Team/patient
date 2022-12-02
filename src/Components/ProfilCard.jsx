@@ -20,6 +20,7 @@ export default function ProfilCard (){
         sx={{
             borderRadius: "10px",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.15)",
+            bgcolor: "#F8F8F8",
             p: 2,
             mt: 8
         }}

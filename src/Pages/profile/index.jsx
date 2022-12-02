@@ -16,8 +16,8 @@ import GitBetter from "images/GitBetter.svg"
 import Appbar from "Components/Appbar";
 import ProfilCard from "Components/ProfilCard";
 
+
 export default function Profil() {
-  
   return (
     <Container
       sx={{
@@ -37,6 +37,8 @@ export default function Profil() {
         ></Box>
       </Box>
       <ProfilCard />
+      
+
     </Container>
   );
 }
