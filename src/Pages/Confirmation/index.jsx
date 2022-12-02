@@ -1,12 +1,10 @@
-import { Avatar, Card, Box, CardContent, Grid, Link as MuiLink, Typography } from "@mui/material";
+import { Avatar, Card, Box, CardContent, Grid, Typography } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 import { usePhoneAuthMutation } from "app/backend/export/auth";
 import Auth from "Components/Auth";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
 import { Container } from "@mui/material";
-import { fontSize } from "@mui/system";
 
 export default function Confirmation() {
     return (

@@ -35,7 +35,7 @@ export default function Drugs({
             mt: 1,
           }}
         >
-          <img src={img} width="20px" />
+          <img src={img} alt="img" width="20px" />
           <Box
             sx={{
               width: "45.13px",

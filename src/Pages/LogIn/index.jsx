@@ -18,7 +18,6 @@ export default function LogIn() {
                 display: "flex",
                 flexDirection: "column",
                 minHeight: "100vh",
-                maxWidth: "100vw",
                 alignItems: "center",
                 justifyContent: "space-between",
                 position: "relative",
@@ -85,7 +84,7 @@ export default function LogIn() {
                                     outline: "theme.secondary",
                                 },
                             ]}
-                            sx={{ maxWidth: "100%", maxWidth: "100%" }}
+                            sx={{ maxWidth: "100%" }}
                         >
                             {/* <Grid container>
                                 <Grid item xs>

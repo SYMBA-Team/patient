@@ -1,4 +1,4 @@
-import { Box, Typography, Card } from "@mui/material";
+import { Box, Typography} from "@mui/material";
 import Burger from "images/burger.svg";
 import Logo from "images/Logo-Small.png";
 import DiagnosisCard from "Components/DiagnosisCard";
@@ -73,8 +73,8 @@ export default function DiagnosisInfo() {
           p: 4,
         }}
       >
-        <img src={Burger} />
-        <img src={Logo} />
+        <img src={Burger} alt="burger" />
+        <img src={Logo} alt="logo" />
       </Box>
       <DiagnosisCard />
       <Typography

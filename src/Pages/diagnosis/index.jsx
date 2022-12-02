@@ -14,8 +14,8 @@ export default function Diagnosis() {
           p: 4,
         }}
       >
-        <img src={Burger} />
-        <img src={Logo} />
+        <img src={Burger} alt="burger" />
+        <img src={Logo} alt="logo"/>
       </Box>
       <DiagnosisCard />
       <Typography

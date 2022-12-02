@@ -1,18 +1,7 @@
 import {
   Container,
-  Avatar,
-  Card,
   Box,
-  CardContent,
-  Grid,
-  Link as MuiLink,
-  Typography,
-  Modal,
-  Divider,
-  List,
-  ListItem,
 } from "@mui/material";
-import GitBetter from "images/GitBetter.svg";
 import Appbar from "Components/Appbar";
 import ProfilCard from "Components/ProfilCard";
 import CardList from "Components/CardList";
