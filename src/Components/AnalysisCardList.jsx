@@ -1,7 +1,5 @@
 import Card from "@mui/material/Card";
-import { Typography, Box, Button } from "@mui/material";
-import { palette } from "@mui/system";
-import DateProfil from "./DateProfil";
+import { Typography, Box } from "@mui/material";
 
 export default function AnalysisCardList({ List }) {
   return (

@@ -1,5 +1,4 @@
-import { Box, Typography, Card } from "@mui/material";
-import { Container } from "@mui/system";
+import { Box, Typography } from "@mui/material";
 import QRBar from "./QRBar";
 
 export default function Visits() {

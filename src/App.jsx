@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useGetUserDataMutation } from "app/backend/export/auth";
 import { useUser } from "hooks";
-import { Copyright } from "Components/Copyright";
 import { BrowserRouter } from "react-router-dom";
 
 import Router from "./Router";

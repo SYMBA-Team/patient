@@ -43,6 +43,10 @@ const Router = () => {
             element: <Diagnosis />,
         },
         {
+            path: "/DiagnosisInfo",
+            element: <DiagnosisInfo />,
+        },
+        {
             path: "/analysis",
             element: <Analysis />,
         },

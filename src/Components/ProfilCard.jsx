@@ -1,16 +1,9 @@
-import { StayPrimaryLandscape } from "@mui/icons-material";
+
 import {
-    Container,
-    Avatar,
     Card,
     Box,
-    CardContent,
-    Grid,
-    Link as MuiLink,
     Typography,
 } from "@mui/material";
-import { borderRadius } from "@mui/system";
-import { bgcolor } from "@mui/system";
 import loader from "images/loader.svg";
 import profilPic from "images/profil-pic.svg";
 
@@ -30,7 +23,7 @@ export default function ProfilCard (){
        >
        <img 
           src={profilPic}
-          
+          alt="profil pic"
           ></img>
           <Box>
              <Typography sx={{px:2, fontSize: "16px", color: "primary.main",fontWeight:"bold"}}>Sofiane Hafsaoui</Typography>
@@ -43,7 +36,7 @@ export default function ProfilCard (){
                 px: 2,
                 pt:1
                 }}>
-               <img src={loader} 
+               <img src={loader} alt="loader"
                ></img>
                <Typography sx={{fontSize: "13px", color: "primary.main"}}>65 % Complete</Typography>
              </Box>

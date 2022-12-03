@@ -1,9 +1,6 @@
 import { Box } from "@mui/material";
 import QRIcon from "images/QRIcon.svg";
-import QRcode from "images/QRcode.png";
 import { useState } from "react";
-import { theme } from "Theme";
-import { height } from "@mui/system";
 export default function QRBar() {
   const [value, SetValue] = useState(false);
   function OnQRClick() {
@@ -31,7 +28,6 @@ export default function QRBar() {
         onClick={OnQRClick}
         sx={{
           backgroundColor: "secondary.main",
-          height: "60%",
           height: value ? "2%" : "0%",
           width: "15%",
           margin: "auto",

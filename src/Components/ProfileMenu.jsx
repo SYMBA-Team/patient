@@ -1,7 +1,4 @@
 import {
-    Container,
-    Avatar,
-    Card,
     Box,
     Typography,
     Modal,
@@ -45,7 +42,7 @@ export default function ProfileMenu({ handleClose,open }) {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        <img src={GitBetter} width="50%" style={{ margin: "auto", pt: 2 }} />
+        <img src={GitBetter} alt="logo" width="50%" style={{ margin: "auto", pt: 2 }} />
         <Box>
           <Box
             sx={{
@@ -54,7 +51,7 @@ export default function ProfileMenu({ handleClose,open }) {
               mb: 3,
             }}
           >
-            <img src={profilPic} width="45.33px" height="45.33px" />
+            <img src={profilPic} alt="profil pic" width="45.33px" height="45.33px" />
             <Box
               sx={{
                 ml: 2,
